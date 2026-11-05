@@ -1,0 +1,98 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: blueviolet;
+}
+.todo{
+  min-height: 40vh;
+  width: 30vw;
+  background-color: white;
+  border-radius: 10px; 
+  padding-bottom: 20px;
+}
+.todo h1{
+  font-family:Poppins;
+  padding:5%;
+}
+.todo img{
+  width: 25px;
+  height: 29px;
+  object-fit: cover;
+  margin-top: 30px;  
+  margin-left: -15px;
+}
+.heading{
+  display: flex;
+  gap:0px;  
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background-color: lightgrey;
+  width: 26vw;
+  /*padding: 17px;*/
+  margin-left: 20px;
+}
+#input-box{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 14px;
+  font-weight: 14px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: coral;
+  width: 5vw;
+  font-size: 16px;
+  cursor: pointer;  
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(https://img.magnific.com/free-vector/stroke-round-geometric-shape-vector_53876-175080.jpg);
+  background-size: cover;
+  background-position: center;  
+  top: 8px;
+  left: 0.5px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1f/1328101911_Symbol-Check.png);
+  
+}
